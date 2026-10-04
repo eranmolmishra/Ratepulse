@@ -1,0 +1,25 @@
+{
+  "name": "store-rating-platform",
+  "version": "1.0.0",
+  "description": "Production Full-Stack Store Rating Application with Dark SaaS Dashboard",
+  "private": true,
+  "scripts": {
+    "start:backend": "npm --prefix backend run start",
+    "dev:backend": "npm --prefix backend run dev",
+    "start:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "migrate": "node database/migrations/runMigrations.js",
+    "seed": "node database/seed/seedData.js",
+    "test:e2e": "node verify_e2e.js",
+    "test": "node verify_e2e.js"
+  },
+  "keywords": [
+    "react",
+    "express",
+    "postgresql",
+    "supabase",
+    "rating-platform"
+  ],
+  "author": "",
+  "license": "ISC"
+}
